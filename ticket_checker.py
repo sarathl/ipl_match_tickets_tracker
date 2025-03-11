@@ -35,12 +35,12 @@ def check_ticket_availability():
             if 'css-17nyg3h' in div_string or 'book tickets' in div_string:
                 print("Tickets are available.")
                 return True
-            elif 'coming soon' in div_string:
+            if 'coming soon' in div_string:
                 print("Tickets are coming soon.")
                 return False
-            else:
-                print("Match div found, but ticket status is unclear.")
-                return False
+            print("Match div found, but ticket status is unclear.")
+            return False
+    print("Match div not found.")
     return False
 
 if __name__ == '__main__':
