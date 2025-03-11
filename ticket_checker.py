@@ -29,7 +29,7 @@ def check_ticket_availability():
     for div in divs:
         div_string = str(div).lower()
         # Adjust the text check to match the content structure
-        if 'chennai super kings<!-- --> vs <!-- -->royal challengers bengaluru' in div_string:
+        if 'sunrisers hyderabad<!-- --> vs <!-- -->rajasthan royals' in div_string:
             print("Found the match div.")
             # Check for indicators of ticket availability
             if 'css-17nyg3h' in div_string or 'book tickets' in div_string:
